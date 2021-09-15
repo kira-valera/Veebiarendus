@@ -1,0 +1,21 @@
+body {
+    font-family: Arial, serif;
+    font-size: 13px;
+}
+p {
+    text-align: justify;
+}
+a {
+    text-decoration: none;
+    background-color: #8B6ED7;
+    color: #ffffff;
+}
+
+a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+.right {
+    font-style: oblique;
+    text-align: right;
+}
