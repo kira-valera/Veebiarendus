@@ -1,0 +1,77 @@
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+.menu > li{
+    float: bottom;
+    position: relative;
+}
+.menu > li:last-child {
+    left: 20px;
+}
+.menu > li > ul > li {
+    width: 117px;
+    padding: 2px;
+}
+.menu > li > ul > li:hover {
+    background-color: #e9e9e9;
+    color: deeppink;
+    cursor: pointer;
+}
+.menu > li > ul {
+    font-family: cursive, serif;
+    font-weight: bold;
+    font-size: large;
+    background-color: deeppink;
+    position: relative;
+    top: -5px;
+    box-shadow: 0 0  5px rgba(0, 0, 0, 0.7);
+    padding: 3px;
+    padding-top: 5px;
+    color: aqua;
+    z-index: 1;
+}
+span {
+    font-family: "Corsiva Hebrew", serif;
+    font-size: large;
+    font-weight: bolder;
+    font-style: oblique;
+    padding: 2px 6px 0px 6px;
+    height: 26px;
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+    color: blueviolet;
+    text-decoration: none;
+}
+.menu > li {
+    visibility: hidden
+}
+span {
+    visibility: visible
+}
+.menu > li:hover > span {
+    background-color: deeppink;
+    color:  black;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0 0  5px rgba(0, 0, 0, 0.7);
+    border-radius: 5px 5px 0 0;
+}
+.menu > li:hover > ul {
+    visibility: visible
+}
+.menu > li:hover > div {
+    visibility: visible
+}
+.menu > li > div {
+    height: 5px;
+    top: 0px;
+    position: relative;
+    background-color: deeppink;
+    z-index: 3;
+}
+body {
+    background-image: url("gradi.png");
+    background-size: 100%;
+}
