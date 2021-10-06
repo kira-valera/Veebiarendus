@@ -1,0 +1,26 @@
+body {
+    margin: 45px 100px;
+    background-color: #f3c2a5;
+    color: #5c2f02;
+    border: double 10px #6B8E23;
+    padding: 5px;
+}
+h3 {
+    text-align: center;
+}
+p {
+    text-align: justify;
+}
+.rgt {
+    font-style: italic;
+    font-weight: bold;
+    text-align: right;
+}
+.krolik {
+    float: left;
+    width: 120px;
+}
+.alisa {
+    float: right;
+    width: 45px;
+}

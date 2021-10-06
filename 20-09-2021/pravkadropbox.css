@@ -2,8 +2,8 @@ ul {
     list-style-type: none;
     padding: 0;
 }
-.menu > li{
-    float: bottom;
+.menu > li {
+    float: left;
     position: relative;
 }
 .menu > li:last-child {
@@ -41,7 +41,6 @@ span {
     display: inline-block;
     position: relative;
     z-index: 2;
-    color: blueviolet;
     text-decoration: none;
 }
 .menu > li {
@@ -72,6 +71,9 @@ span {
     z-index: 3;
 }
 body {
-    background-image: url("gradi.png");
+    background-image: url("../17-09-2021/Background.png");
     background-size: 100%;
+}
+.freehosting-2domains-link {
+    display: none;
 }
