@@ -1,6 +1,3 @@
-body {
-    background-image: url("bg.jpg");
-}
 span {
     display:inline-block;
     height:160px;
@@ -17,7 +14,13 @@ a {
     position:absolute;
     width:30px;
     height:30px;
-    background:url(social_icons.png);
+    background: url("social_icons.png");
+}
+.freehosting-2domains-link {
+    display: none;
+}
+body {
+    background-image: url("bg.jpg");
 }
 .vk {
     top:5px;
@@ -44,8 +47,8 @@ a {
     background-position:0 0;
 }
 .mail {
-        bottom:-10px;
-        left:68px;
+    bottom:-10px;
+    left:68px;
     background-position:60px 60px;
 }
 .mail:hover {

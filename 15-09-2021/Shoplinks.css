@@ -2,7 +2,7 @@ body {
     font-family: Arial, serif;
     font-size: 13px;
     padding-right: 70%;
-    background-image: url("Background.jpg");
+    background-image: url("bg.jpg");
     background-size: 100%;
 }
 p {
