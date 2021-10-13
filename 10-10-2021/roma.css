@@ -1,18 +1,18 @@
 body {
-    font-family: "Canela Deck", serif;
-    font-size: larger;
     background-image: url("bgitaly.jpg");
     background-size: 100%;
+    filter: alpha(opacity=50);
 }
-
+p {
+    font-family: "Canela Deck", serif;
+    font-size: larger;
+}
 h1 {
+    font-family: "Corsiva Hebrew", serif;
     text-align: center;
     background-color: lightgoldenrodyellow;
-
-
 }
 .roma  {
     margin-left: 10px;
     margin-right: 15px;
-    align-self: end;
 }
