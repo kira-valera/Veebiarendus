@@ -1,21 +1,22 @@
 body {
     font-family:'Times New Roman', Times, serif;
-    font-size: 16px;
+    font-size: medium;
     line-height: 1.3em;
     background-image: url("Shiny.webp");
-    background-size: 50%;
-    background-repeat: no-repeat;
+    background-size: 100%;
 }
 ul {
     list-style-type: square;
 }
 h1 {
-    font-family: "Comic Sans MS", cursive;
+    font-family:"Comic Sans MS", serif;
     color: deepskyblue;
+    text-align: center;
 }
 h2 {
     font-family: ".SF NS Mono", serif ;
     color: midnightblue;
+    text-align: center;
     background-color: fuchsia;
 }
 .red {
