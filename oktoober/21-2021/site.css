@@ -1,0 +1,32 @@
+.tbl {
+    margin: auto;
+    width: 670px;
+    border: 1px;
+}
+p {
+    font-family: Verdana, serif;
+    color: #00349a;
+    text-align: justify;
+}
+.mid {
+    font-family: Verdana, serif;
+    font-size: 17px;
+    text-align: justify;
+    color: #00349a;
+    border: 1px;
+}
+.mid td {
+    padding: 0;
+}
+.imgcntr {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.up {
+    font-family: Verdana, serif;
+    color: #003399;
+    font-weight: bold;
+    height: 50px;
+    text-align: right;
+}
