@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Cats</title>
+</head>
+
+<body>
+<center><script language="JavaScript1.1">
+
+var specifyimage=new Array() //Your images
+specifyimage[0]="pic/001.png"
+specifyimage[1]="*.png"
+specifyimage[2]="*.jpg"
+specifyimage[3]="*.jpg"
+specifyimage[4]="*.jpg"
+specifyimage[5]="*.jpg"
+specifyimage[6]="*.jpg"
+specifyimage[7]="*.jpg"
+specifyimage[8]="*.jpg"
+specifyimage[9]="*.jpg"
+
+
+var delay=2000 //2 seconds
+
+//Counter for array
+var count =1;
+
+var cubeimage=new Array()
+for (i=0;i<specifyimage.length;i++){
+cubeimage[i]=new Image()
+cubeimage[i].src=specifyimage[i]
+}
+
+function movecube(){
+if (window.createPopup)
+cube.filters[0].apply()
+document.images.cube.src=cubeimage[count].src;
+if (window.createPopup)
+cube.filters[0].play()
+count++;
+if (count==cubeimage.length)
+count=0;
+setTimeout("movecube()",delay)
+}
+
+window.onload=new Function("setTimeout('movecube()',delay)")
+</script>
+  <img src="pic/007.jpg" name="cube" border=0 style="filter:progid:DXImageTransform.Microsoft.Stretch(stretchStyle='PUSH')">
+
+</center>
+</body>
+</html>
+
+</body>
+</html>

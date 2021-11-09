@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Блоки</title>
+</head>
+<body>
+<h2>Раскрываемые блоки </h2>
+<p><a href="#" onClick="
+    if(document.getElementById('in').style.display == 'none'){
+    document.getElementById('in').style.display = 'block';
+    } else{
+    document.getElementById('in').style.display = 'none';
+        }
+        return false;
+    ">
+    Тут будет текст
+</a></p>
+<div style="display: none; text-align: center" id="in">
+    здеся написано что написано и больше я не хочу ничаво писать здеся
+</div>
+</body>
+</html>
