@@ -7,17 +7,31 @@
 <body>
 <h2>Раскрываемые блоки </h2>
 <p><a href="#" onClick="
-    if(document.getElementById('in').style.display == 'none'){
-    document.getElementById('in').style.display = 'block';
+    if(document.getElementById('in1').style.display == 'none'){
+    document.getElementById('in1').style.display = 'block';
     } else{
-    document.getElementById('in').style.display = 'none';
+    document.getElementById('in1').style.display = 'none';
         }
         return false;
     ">
-    Тут будет текст
+    Раскрываемый блок
 </a></p>
-<div style="display: none; text-align: center" id="in">
-    здеся написано что написано и больше я не хочу ничаво писать здеся
+<div style="display: none; text-align: center" id="in1">
+    <img src="pic/003.png" alt="HERNJA">
+</div>
+
+<p><a href="#" onClick="
+    if(document.getElementById('in2').style.display == 'none'){
+    document.getElementById('in2').style.display = 'block';
+    } else{
+    document.getElementById('in2').style.display = 'none';
+        }
+        return false;
+    ">
+    Раскрываемый блок c текстом
+</a></p>
+<div style="display: none; text-align: center" id="in2">
+    Какой то текст
 </div>
 </body>
 </html>

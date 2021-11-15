@@ -1,6 +1,14 @@
 <?php
+
 if (! isset($_GET['page']))
-{ $_GET['page']=1;}
+
+{
+    $_GET['page']=1;
+}
+
+?>
+
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
@@ -32,90 +40,15 @@ if (! isset($_GET['page']))
 		<div class="title-top-right">
 		<div class="title-bottom-right">
 			<h1><a href="/" title="Go to homepage">MY <span>PERSONAL</span> WEBSITE</a></h1>
-			<p>Lorem ipsum dolor sit amet&hellip;</p>
-			<h2>Часы с циферблатом</h2>
-	<script type="text/javascript">
-    function clockPainting() {
-        var now = new Date();
-        var sec = now.getSeconds();
-        var min = now.getMinutes();
-        var hr = now.getHours();
-
-        var ctx = document.getElementById("canvas").getContext("2d");
-        ctx.save();// помещаем текущий контекст в стэк
-
-        ctx.clearRect(0,0,150,150);
-        ctx.translate(75, 75);
-        ctx.scale(0.4,0.4);
-        ctx.rotate(-Math.PI/2);
-
-        ctx.strokeStyle = "black";
-        ctx.fillStyle = "black";
-        ctx.lineWidth = 8;
-        ctx.lineCap = "round";
-
-        ctx.save();
-        ctx.beginPath();
-
-        for (var i = 0; i < 12; i++) {
-            ctx.rotate(Math.PI/6);
-            ctx.moveTo(100,0);
-            ctx.lineTo(120,0);
-        }
-
-        ctx.stroke();// нарисовали то, что ранее описали
-        ctx.restore();// достаем последний сохраненный контекст из стэка
-
-        ctx.save();
-        // рисуем часовую стрелку, вращая холст
-        ctx.rotate((Math.PI/6)*hr +
-            (Math.PI/360)*min +
-            (Math.PI/21600)*sec);
-        ctx.lineWidth = 14;
-
-        ctx.beginPath();
-        ctx.moveTo(-20,0);
-
-        // линия почти до часовых меток
-        ctx.lineTo(80,0);
-        ctx.stroke();
-        ctx.restore();
-
-        ctx.save();
-
-        // минутная стрелка
-        ctx.rotate((Math.PI/30*min) +
-            (Math.PI/1800)*sec);
-        ctx.lineWidth = 10;
-
-        ctx.beginPath();
-        ctx.moveTo(-28,0);
-        ctx.lineTo(112,0);
-        ctx.stroke();
-        ctx.restore();
-
-        ctx.save();
-
-        // секундная стрелка
-        ctx.rotate(sec * Math.PI/30);
-        ctx.strokeStyle = "#D40000";// цвет контура
-        ctx.fillStyle = "#D40000";
-        ctx.lineWidth = 6;
-
-        ctx.beginPath();
-        ctx.moveTo(-30,0);
-        ctx.lineTo(83,0);
-        ctx.stroke();
-        ctx.restore();
-
-        ctx.restore();
-    }
-    window.onload = function() {
-        setInterval(clockPainting, 1000);// функция, перерисовывающая часы
-        //через равные промежутки времени
-    }
-</script>
-	<center><canvas id="canvas" height="150" width="150"></canvas></center>
+			<p>
+                <script language="JavaScript">
+                    var h=(new Date()).getHours();
+                    if (h >3 && h< 12) document.writeln("Tere hommikust!");
+                    if (h>11 && h< 19) document.writeln("Tere p&auml;evast!");
+                    if (h>18 && h< 24) document.writeln("Tere &otilde;htust!");
+                    if (h>23 || h< 4) document.writeln("Head &ouml;&ouml;d!");
+                </script>
+            </p>
 		</div>
 		</div>
 		</div>
@@ -135,11 +68,19 @@ if (! isset($_GET['page']))
 		<h3>Содержание</h3>
 		<a href="#skip-menu" class="hidden">Skip menu</a>
 		<ul class="menu">
-			<li><a href="index.php?page=1" class="active">Home</a></li>
-			<li><a href="index.php?page=2">Подробные часы</a></li>
-			<li><a href="index.php?page=3">Галерея</a></li>
-			<li><a href="index.php?page=4">Раскрываемые блоки</a></li>
-			<li class="last"><a href="#">Contact</a></li>
+			<li><a href="bluesite.php?page=1" class="active">Home</a></li>
+			<li><a href="bluesite.php?page=2">Подробные часы</a></li>
+			<li><a href="bluesite.php?page=3">Галерея</a></li>
+			<li><a href="bluesite.php?page=4">Раскрываемые блоки</a></li>
+			<li><a href="bluesite.php?page=5">Всплывающие окна</a></li>
+            <li><a href="bluesite.php?page=6">Знаки зодиака</a></li>
+            <li><a href="bluesite.php?page=7">Секундомер</a></li>
+            <li><a href="bluesite.php?page=8">Солнечная система</a></li>
+            <li><a href="bluesite.php?page=9">Птички летят</a></li>
+            <li><a href="bluesite.php?page=10">Бегущая строка</a></li>
+
+
+            <li class="last"><a href="#">Contact</a></li>
 		</ul>
 		</div>
 		<div id="skip-menu"></div>
@@ -148,14 +89,15 @@ if (! isset($_GET['page']))
 			<div class="box-top"></div>
 			<div class="box-in">
 <?php
-$fn=$_GET['page'].".html";
+$fn0 = ".html";
+$fn=$_GET['page'].$fn0;
             include ($fn);
-            ?>
+                ?>
             </div>
 			</div>
 			<div class="box-bottom">
 <hr class="noscreen" />
-			<div class="footer-info-left"><a href="https://kira-valeriia.gq/Veebiarendus/08.11/bluesite.php">Мои работы со скриптами</a> 2021 Все права защищены</div>
+			<div class="footer-info-left"><a href="bluesite.php">Мои работы со скриптами</a> 2021 Все права защищены</div>
 			<div class="footer-info-right"><a href="mailto:kira-valeriia.ivanova@ivkhk.ee">Связаться со мной</a></div>
 			</div>
 		</div>

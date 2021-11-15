@@ -17,22 +17,6 @@
     </style>
 </head>
 <body>
-<h2>Часы в форме</h2>
-<script language="JavaScript">
-    function fulltime()
-    {
-        var time=new Date();
-        document.clock.full.value=time.toLocaleString();
-        setTimeout(" fulltime()",500) }
-</script>
-<center>
-    <form name="clock">
-        <input type="text" size="32" name="full">
-    </form>
-    <script language="JavaScript">
-        fulltime();
-    </script>
-</center>
 <h2>Часы с циферблатом</h2>
 <script type="text/javascript">
     function clockPainting() {
@@ -72,6 +56,8 @@
             (Math.PI/360)*min +
             (Math.PI/21600)*sec);
         ctx.lineWidth = 14;
+        ctx.strokeStyle = "blue";// цвет контура
+        ctx.fillStyle = "blue";
 
         ctx.beginPath();
         ctx.moveTo(-20,0);
@@ -87,6 +73,8 @@
         ctx.rotate((Math.PI/30*min) +
             (Math.PI/1800)*sec);
         ctx.lineWidth = 10;
+        ctx.strokeStyle = "blue";// цвет контура
+        ctx.fillStyle = "blue";
 
         ctx.beginPath();
         ctx.moveTo(-28,0);
@@ -116,5 +104,21 @@
     }
 </script>
 <center><canvas id="canvas" height="150" width="150"></canvas></center>
+<h2>Часы в форме</h2>
+<script language="JavaScript">
+    function fulltime()
+    {
+        var time=new Date();
+        document.clock.full.value=time.toLocaleString();
+        setTimeout(" fulltime()",500) }
+</script>
+<center>
+    <form name="clock">
+        <input type="text" size="32" name="full">
+    </form>
+    <script language="JavaScript">
+        fulltime();
+    </script>
+</center>
 </body>
 </html>
