@@ -1,0 +1,32 @@
+body {
+	font-family:Tahoma, serif;
+}
+table {
+	width: 700px;
+	border: solid 3px #fab078;
+	border-spacing: 4px;
+	align-content: center;
+}
+caption {
+	font-weight: bold;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: left;
+	color: #fab078;
+}
+th {
+	text-align: center;
+	border: solid 1px #fab078;
+	border-spacing: 1px;
+	background: #fab078;
+	padding: 15px;
+}
+td {
+	border: solid 1px #fab078;
+	padding: 15px;
+	text-align: center;
+}
+.frst {
+	text-align: left;
+	padding: 15px;
+}

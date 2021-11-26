@@ -23,6 +23,7 @@ body {
     background: url(bgtum.jpg);
     background-size: auto;
     color: #626668;
+    background-repeat: no-repeat;
 }
 
 div.wrap {
