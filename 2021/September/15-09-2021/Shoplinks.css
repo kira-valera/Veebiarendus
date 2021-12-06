@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, serif;
+    font-size: 13px;
+    padding-right: 70%;
+    background-image: url("bg.jpg");
+    background-size: 150%;
+    background-repeat: no-repeat;
+    width: 410px;
+}
+p {
+    text-align: justify;
+}
+p:hover {
+    color: #fff741;
+}
+a {
+    text-decoration: none;
+    background-color: #8B6ED7;
+    color: #ffffff;
+}
+a:visited {
+    color: darkmagenta;
+}
+a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+.right {
+    font-style: oblique;
+    text-align: right;
+}

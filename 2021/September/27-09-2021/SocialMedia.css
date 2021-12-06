@@ -1,0 +1,64 @@
+span {
+    display: inline-block;
+    height: 160px;
+    border-radius: 100%;
+    overflow: hidden;
+    border: 3px solid #CBCBCB;
+}
+div {
+    display: inline-block;
+    position: relative;
+    margin: 11px;
+}
+a {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: url("social_icons.png");
+}
+.freehosting-2domains-link {
+    display: none;
+}
+body {
+    background-image: url("bg.jpg");
+}
+.vk {
+    top: 5px;
+    left: 17px;
+    background-position: 90px 60px ;
+}
+.vk:hover {
+    background-position: 90px 60px;
+}
+.t {
+    top: 31px;
+    left: -3px;
+    background-position: 120px 60px;
+}
+.t:hover {
+    background-position: 120px 60px;
+}
+.f {
+    top: 63px;
+    left: -10px;
+    background-position: 0 60px;
+}
+.f:hover {
+    background-position: 0 0;
+}
+.mail {
+    bottom: -10px;
+    left: 68px;
+    background-position: 60px 60px;
+}
+.mail:hover {
+    background-position: 60px 60px;
+}
+.instagram {
+    bottom: 10px;
+    left: 10px;
+    background-position: 330px 60px;
+}
+.instagram:hover {
+    background-position: 330px 60px;
+}

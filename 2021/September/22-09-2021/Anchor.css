@@ -1,0 +1,19 @@
+body {
+    margin: 40px;
+    font-family: Arial, serif;
+}
+p {
+    text-align: justify;
+}
+ol {
+    list-style-type: lower-greek;
+}
+img {
+    padding: 15px;
+}
+.pravo {
+    float: right;
+}
+.levo {
+    float: left;
+}

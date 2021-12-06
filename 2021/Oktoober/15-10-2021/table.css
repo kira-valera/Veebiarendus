@@ -1,0 +1,49 @@
+body {
+    font-family: "Comic Sans MS", serif;
+}
+table {
+    width: 540px;
+    border: solid 2px gray;
+    border-spacing: 0;
+    margin: auto;
+}
+caption {
+    font-weight: bold;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+th {
+    text-align: center;
+    font-weight: bold;
+    border: solid 1px grey;
+}
+td {
+    border: solid 1px grey;
+    padding: 5px;
+}
+.krsn {
+    background-color: red;
+}
+.ornz {
+    background-color: orange;
+}
+.yllw {
+    background-color: yellow;
+}
+.grn {
+    background-color: green;
+}
+.lghtbl {
+    background-color: lightblue;
+}
+.bl {
+    background-color: blue;
+    color: #BEBEBE;
+}
+.vlt {
+    background-color: blueviolet;
+}
+.blc {
+    background-color: black;
+    color: #BEBEBE;
+}

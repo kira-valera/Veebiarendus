@@ -1,0 +1,21 @@
+table {
+    width: 700px;
+    font-family: Tahoma, serif;
+    font-size: 10px;
+}
+caption {
+    font-family: Tahoma, serif;
+    text-align: left;
+    font-size: 18px;
+    font-weight: bold;
+}
+th {
+    background-color: #d8f4d2;
+}
+td {
+    background-color: #d8f4d2;
+    width: auto;
+}
+tr {
+    text-align: center;
+}

@@ -1,0 +1,35 @@
+body {
+    margin: 65px;
+    background:beige url("map_bg.jpg") repeat;
+    font-family: George, serif;
+    font-size: 16px;
+}
+h1 {
+    font-family: Tahoma, serif;
+    color: white;
+    background-color:#006400;
+}
+p{
+    text-align:justify;
+    text-indent: 2.5em;
+    line-height: 1.7em;
+}
+img {
+    margin: 10px;
+    border: 10px #006400 solid;
+    border-radius: 2%;
+    box-shadow: 15px rgba(0,0,0,0.8);
+}
+a {
+    color: darkgreen;
+    text-decoration: none;
+    font-weight: bold;
+}
+a:hover {
+    color: blue;
+    letter-spacing: 3px;
+    font-style: italic;
+}
+.cntr {
+    text-align: center;
+}
